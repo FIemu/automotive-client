@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../Components/Navbar/Navbar";
+import Navbar from "../../Components/Navbar/Navbar";
 import { Toaster } from "react-hot-toast";
-import Footer from "../Components/Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import { useEffect, useState } from "react";
 
 const MainLayout = () => {

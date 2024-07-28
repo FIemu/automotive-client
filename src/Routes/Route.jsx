@@ -10,7 +10,7 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
-import MainLayout from "../Layout/MainLayout";
+import MainLayout from "../Pages/Layout/MainLayout";
 
 
 const Route = createBrowserRouter([
