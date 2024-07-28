@@ -46,7 +46,7 @@ const AddProduct = () => {
     };
 
     axios
-      .post("https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/products", product, {
+      .post("https://automotive-server-side-lqb36usn0-fiemus-projects.vercel.app/products", product, {
         headers: {
           "Content-Type": "application/json",
         },

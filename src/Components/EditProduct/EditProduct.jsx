@@ -48,7 +48,7 @@ const EditProduct = () => {
     }
     
     axios
-    .put(`https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/products/${selectedId}`,newObject,{
+    .put(`https://automotive-server-side-lqb36usn0-fiemus-projects.vercel.app/products/${selectedId}`,newObject,{
       headers:{
         "Content-Type":"application/json"
       }

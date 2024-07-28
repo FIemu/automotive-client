@@ -22,7 +22,7 @@ const Route = createBrowserRouter([
             path:'/',
             element:<Home/>,
             errorElement:<ErrorPage/>,
-            loader:()=> fetch('https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/brands')
+            loader:()=> fetch('https://automotive-server-side-lqb36usn0-fiemus-projects.vercel.app/brands')
         },
         {
             path:'/myCarts',
@@ -55,7 +55,7 @@ const Route = createBrowserRouter([
         {
             path:'/editProduct/:id',
             element:<PrivateRoutes><EditProduct/></PrivateRoutes>,
-            loader:({params})=>fetch(`https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/products/${params.id}`)
+            loader:({params})=>fetch(`https://automotive-server-side-lqb36usn0-fiemus-projects.vercel.app/products/${params.id}`)
         },
     ],
   },

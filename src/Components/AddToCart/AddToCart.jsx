@@ -32,7 +32,7 @@ const AddToCart = ({ id, model_name }) => {
     } else {
       const find = products?.find((product) => product?._id === id);
       axios
-        .post(`https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/carts`, find, {
+        .post(`https://automotive-server-side-lqb36usn0-fiemus-projects.vercel.app/carts`, find, {
           headers: {
             "Content-Type": "application/json",
           },
