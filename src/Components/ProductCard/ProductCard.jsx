@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-      .delete(`https://automotive-server-side-9d8nyeugx-fiemus-projects.vercel.app/products/${id}`)
+      .delete(`https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/products/${id}`)
       .then((res) => console.log(res.data))
       .then((error) => console.log(error));
       } else if (result.isDenied) {

@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home";
 import MyCarts from "../Pages/MyCarts";
 import AddProduct from "../Pages/AddProduct";
@@ -11,18 +10,19 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import MainLayout from "../Layout/MainLayout";
 
 
 const Route = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,
+    element:<MainLayout/>,
     children: [
         {
             path:'/',
             element:<Home/>,
             errorElement:<ErrorPage/>,
-            loader:()=> fetch('https://automotive-server-side-9d8nyeugx-fiemus-projects.vercel.app/brands')
+            loader:()=> fetch('https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/brands')
         },
         {
             path:'/myCarts',
@@ -55,7 +55,7 @@ const Route = createBrowserRouter([
         {
             path:'/editProduct/:id',
             element:<PrivateRoutes><EditProduct/></PrivateRoutes>,
-            loader:({params})=>fetch(`https://automotive-server-side-9d8nyeugx-fiemus-projects.vercel.app/products/${params.id}`)
+            loader:({params})=>fetch(`https://automotive-server-side-i5w11r61j-fiemus-projects.vercel.app/products/${params.id}`)
         },
     ],
   },
